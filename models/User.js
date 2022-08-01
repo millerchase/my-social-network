@@ -1,6 +1,4 @@
 const { Schema, Model } = require('mongoose');
-const { DateTime } = require('luxon');
-// console.log(DateTime.now().toLocaleString(DateTime.DATETIME_FULL));
 
 const UserSchema = new Schema(
   {
