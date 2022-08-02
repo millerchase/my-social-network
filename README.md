@@ -6,17 +6,39 @@ This application setups up your standard social network API routes using MongoDB
 
 ---
 
+## Table of Contents
+
+---
+
+1. [Installation](#installation)
+
+2. [Usage](#usage)
+
+3. [Testing](#testing)
+
+4. [License](#license)
+
+5. [Questions](#questions)
+
+---
+
 ## Installation
 
-Using the above 'Code' button, copy the link that applies to your preferred cloning method. Then in your terminal navigate to the location you would like to add this project to and run the code:
-
-`git clone <coppied link>`
+Using the above 'Code' button, copy the link that applies to your preferred cloning method. Then in your terminal navigate to the location you would like to add this project to and run the code: `git clone <copied link>`
 
 ## Usage
 
 Navigate to the cloned directory and run the code:
 
 `npm start`
+
+## Technologies
+
+- JavaScript
+- Express.js
+- Mongoose
+- MongoDB
+- Luxon
 
 ## Testing
 
