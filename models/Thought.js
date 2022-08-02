@@ -15,7 +15,10 @@ const ReactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: createdAtVal => DateTime.fromISO(createdAtVal).toFormat('ff')
+      get: createdAtVal => {
+        createdAtVal = createdAtVal.toISOString();
+        return DateTime.fromISO(createdAtVal).toFormat('ff');
+      }
     }
   },
   {
@@ -38,7 +41,10 @@ const ThoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: createdAtVal => DateTime.fromISO(createdAtVal).toFormat('ff')
+      get: createdAtVal => {
+        createdAtVal = createdAtVal.toISOString();
+        return DateTime.fromISO(createdAtVal).toFormat('ff');
+      }
     },
     username: {
       type: String,

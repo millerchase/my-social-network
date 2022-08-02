@@ -15,7 +15,7 @@ const thoughtController = {
   getThoughtById: ({ params }, res) => {
     Thought.findOne({ _id: params.id })
       .populate({
-        path: 'comments',
+        path: 'reactions',
         select: '-__v'
       })
       .then(dbThoughtData => {
